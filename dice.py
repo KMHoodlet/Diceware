@@ -5,7 +5,7 @@ word selection process, which I am hoping to port to both Java and C++.
 
 @author Keith M. Hoodlet
 
-Version 1.07 : 12/22/2015
+Version 1.08 : 12/23/2015
 """
 
 ##=========================================================================
@@ -23,7 +23,6 @@ wordlist = [None] * 66666
 ## Collect all numbers and associated words
 
 with open('example_list.txt') as f:
-    count = 0
     for line in f:
         match = re.search('(\d{5}).(.*)', line)
         if match:
