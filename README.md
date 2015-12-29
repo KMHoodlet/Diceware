@@ -4,5 +4,5 @@ A simple, entropic generator for memorable passwords that tell a story.
 ## Upcoming Features
 * 1.) Allow for the user to dictate a specific list to use.
 * 2.) Offer to pull down lists from pre-configured locations.
-* 3.) Allow for the use of multiple lists, with words randomlyselected
+* 3.) Allow for the use of multiple lists, with words randomly selected
       from each list provided.
