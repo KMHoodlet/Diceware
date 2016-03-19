@@ -17,7 +17,7 @@ random.seed(open("/dev/urandom", 'rb'))
 
 words = []
 groups = []
-wordlist = [None] * 66666
+wordlist = [None] * 55555
 
 ##=========================================================================
 ## Collect all numbers and associated words
@@ -27,6 +27,7 @@ with open('example_list.txt') as f:
         match = re.search('(\d{5}).(.*)', line)
         if match:
             location = int(match.group(1))
+            location = (location - 11111)
             wordlist.insert(location, match.group(2))
 
 ##=========================================================================
@@ -83,7 +84,7 @@ random_numbers(count)
 
 for g in groups:
     number = int(g)
-    word = wordlist[number]
+    word = wordlist[number-11111]
     words.append(str(number) + "     " + word)
 
 ##=========================================================================
