@@ -1,11 +1,11 @@
 """ 
 This is an example of the Random Number Generation, and subsequent random 
-word selection process, which I am hoping to port to both Java and C++.
+word selection process, which I am hoping to port to both Java and C or C++.
 
 
 @author Keith M. Hoodlet
 
-Version 1.08 : 12/23/2015
+Version 1.09 : 03/19/2016
 """
 
 ##=========================================================================
