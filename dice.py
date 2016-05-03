@@ -5,7 +5,7 @@ word selection process, which I am hoping to port to both Java and C or C++.
 
 @author Keith M. Hoodlet
 
-Version 1.09 : 03/19/2016
+Version 1.10 : 05/03/2016
 """
 
 ##=========================================================================
@@ -37,10 +37,8 @@ def get_rand():
 
     n = SystemRandom(open("/dev/urandom", 'rb')).getrandbits(3)
 
-    if ( n == 0 ):
+    if ( n == 0 or n == 7 ):
         n = get_rand()
-    elif ( n > 1 ):
-        n -= 1
 
     return n
 
