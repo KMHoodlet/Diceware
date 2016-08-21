@@ -22,7 +22,7 @@ wordlist = [None] * 55555
 ##=========================================================================
 ## Collect all numbers and associated words
 
-with open('example_list.txt') as f:
+with open('eff_large_wordlist.txt') as f:
     for line in f:
         match = re.search('(\d{5}).(.*)', line)
         if match:
