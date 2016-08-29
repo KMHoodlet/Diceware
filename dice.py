@@ -3,17 +3,19 @@ This is an example of the Random Number Generation, and subsequent random
 word selection process, which I am hoping to port to both Java and C or C++.
 
 
-@author Keith M. Hoodlet
+@author K. M. Hoodlet
 
-Version 1.10 : 05/03/2016
+Version 1.11 : 08/29/2016
 """
 
 ##=========================================================================
-import re
+import os
+from os import urandom
 import random
 from random import SystemRandom
+import re
 
-random.seed(open("/dev/urandom", 'rb'))
+random.seed(os.urandom(1024))
 
 words = []
 groups = []
@@ -35,7 +37,7 @@ with open('eff_large_wordlist.txt') as f:
 
 def get_rand():
 
-    n = SystemRandom(open("/dev/urandom", 'rb')).getrandbits(3)
+    n = SystemRandom( os.urandom(1024) ).getrandbits(3)
 
     if ( n == 0 or n == 7 ):
         n = get_rand()
